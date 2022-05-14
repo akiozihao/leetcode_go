@@ -7,7 +7,7 @@ func coinChange(coins []int, amount int) int {
 	}
 	dp[0] = 0
 	for i := 1; i <= amount; i++ {
-		for j := 1; j < len(coins); j++ {
+		for j := 0; j < len(coins); j++ {
 			if coins[j] <= i {
 				dp[i] = min(dp[i], dp[i-coins[j]]+1)
 			}
