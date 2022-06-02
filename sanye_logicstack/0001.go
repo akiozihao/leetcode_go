@@ -1,3 +1,5 @@
+package sanyelogicstack
+
 func twoSum(nums []int, target int) []int {
 	var res [2]int
 	if len(nums) == 0 {
